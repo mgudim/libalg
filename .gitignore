@@ -1,0 +1,14 @@
+todo.txt
+
+#vim
+*.swp
+*.swo
+
+*.o
+*.so
+*.a
+*.dbg
+
+build/
+docker/dev/gmock-1.7.0
+docker/release/gmock-1.7.0
