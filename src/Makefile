@@ -6,7 +6,7 @@ SRC_DIR = ./
 SRC_FILES := $(subst $(SRC_DIR), , $(shell find $(SRC_DIR) -name "*.c"))
 OBJ_FILES = $(addprefix $(BUILD_DIR)/, $(SRC_FILES:.c=.o))
 CC = clang
-CC_FLAGS = -O2 -g
+CC_FLAGS = -O0 -g
 INC_DIR = ../include /home/libds/include
 INC_FLAGS = $(addprefix -I, $(INC_DIR))
 LIBDS_PATH = /home/libds/libds.a

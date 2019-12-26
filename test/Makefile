@@ -13,10 +13,10 @@ LINK_FLAGS =  $(LIB_PATH) $(LIBGTEST_PATH) $((LIBGMOCK_PATH)
 LINKER = g++
 SRC_DIR = ./
 SRC_FILES := $(subst $(SRC_DIR), , $(shell find $(SRC_DIR) -name "*.cc"))
-INC_DIR = ../include /home/gmock-1.7.0/gtest/include /home/gmock-1.7.0/include
+INC_DIR = ../include /home/gmock-1.7.0/gtest/include /home/gmock-1.7.0/include /home/libds/include
 OBJ_FILES = $(addprefix $(BUILD_DIR)/, $(SRC_FILES:.cc=.o))
 CC = g++
-CC_FLAGS = -O2 -g -std=c++11
+CC_FLAGS = -O0 -g -std=c++11
 INC_FLAGS = $(addprefix -I, $(INC_DIR))
 link: compile 
 	mkdir -p $(BUILD_DIR)
